@@ -1,0 +1,315 @@
+body{
+    margin:0;
+    padding:0;
+    color:white;
+    font-family:Arial, sans-serif;
+    background:
+            radial-gradient(
+                    circle at top,
+                    #172554,
+                    #0F172A 60%
+            );
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:30px;
+}
+
+h1{
+    color:#6366F1;
+}
+
+.subtitle{
+    margin-bottom:30px;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.stat{
+    background:#1E293B;
+    padding:15px;
+    border-radius:10px;
+    min-width:140px;
+}
+
+.card{
+    background:#1E293B;
+    padding:30px;
+    border-radius:20px;
+    max-width:800px;
+    margin:25px;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+    margin-left:180px;
+
+}
+
+
+
+button{
+    display:block;
+    width:100%;
+    margin-top:15px;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#6366F1;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    background: linear-gradient(
+            135deg,
+            #6366F1,
+            #8B5CF6
+    );
+    transition:0.3s;
+}
+
+
+
+button:hover{
+    opacity:0.9;
+    transform:scale(1.03);
+    transition:0.3s;
+
+}
+
+.progress-container{
+    width:100%;
+    height:20px;
+    background:#334155;
+    border-radius:20px;
+    margin-top:30px;
+}
+
+#progress-bar{
+    width:0%;
+    height:100%;
+    background:#6366F1;
+    border-radius:20px;
+}
+
+.hbsc-topics{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.hbsc-topics span{
+    background:#334155;
+    padding:10px 15px;
+    border-radius:20px;
+}
+
+
+#start-screen{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+#start-screen button{
+    width:250px;
+}
+
+.final-score{
+    font-size:50px;
+    color:#6366F1;
+}
+
+canvas{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+
+#start-screen{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.background-word{
+    position:absolute;
+    font-size:180px;
+    font-weight:bold;
+    opacity:0.03;
+    letter-spacing:15px;
+    color:white;
+    user-select:none;
+}
+
+.hero-title{
+    font-size:60px;
+    margin-bottom:10px;
+    color:#6366F1;
+    z-index:2;
+}
+
+.hero-subtitle{
+    font-size:26px;
+    font-weight:bold;
+    margin-bottom:15px;
+    z-index:2;
+}
+
+.hero-description{
+    width:650px;
+    max-width:90%;
+    line-height:1.7;
+    color:#cbd5e1;
+    z-index:2;
+}
+
+.hero-hbsc{
+    margin-top:20px;
+    color:#94a3b8;
+    z-index:2;
+}
+
+.hero-cards{
+    margin-top:35px;
+
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    z-index:2;
+}
+
+.hero-card{
+
+    background:#1E293B;
+
+    padding:18px 25px;
+
+    border-radius:15px;
+
+    min-width:170px;
+
+    transition:0.3s;
+}
+
+.hero-card:hover{
+
+    transform:translateY(-5px);
+
+    background:#293548;
+}
+
+.week-line{
+
+    margin-top:30px;
+
+    color:#6366F1;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    z-index:2;
+}
+
+#start-screen button{
+
+    margin-top:35px;
+
+    width:260px;
+
+    background:linear-gradient(
+            135deg,
+            #6366F1,
+            #8B5CF6
+    );
+
+    z-index:2;
+}
+
+.report-cards{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:30px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.report-card{
+
+    width:250px;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    text-align:left;
+
+}
+
+.report-card h3{
+
+    margin-top:0;
+
+}
+
+.strength{
+
+    background:#0f5132;
+}
+
+.improvement{
+
+    background:#664d03;
+}
+
+.recommendation{
+
+    background:#084298;
+}
+
+.score-description{
+
+    color:#cbd5e1;
+
+    margin-bottom:25px;
+
+}
+
+.day-counter{
+
+    text-align:center;
+
+    margin-top:20px;
+
+    margin-bottom:10px;
+
+    color:#94a3b8;
+
+    font-weight:bold;
+
+}

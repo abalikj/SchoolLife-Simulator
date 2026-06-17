@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolLife Simulator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="start-screen">
+
+    <div class="background-word">
+        WELLBEING
+    </div>
+
+    <h1 class="hero-title">
+        SchoolLife Simulator
+    </h1>
+
+    <p class="hero-subtitle">
+        One Week. Many Choices.
+        One Wellbeing Story.
+    </p>
+
+    <p class="hero-description">
+        Explore how everyday decisions influence
+        mental health, school life and wellbeing.
+    </p>
+
+    <p class="hero-hbsc">
+        Inspired by the HBSC Study
+    </p>
+
+    <div class="hero-cards">
+
+        <div class="hero-card">
+            Mental Health
+        </div>
+
+        <div class="hero-card">
+            School Life
+        </div>
+
+        <div class="hero-card">
+            Social Support
+        </div>
+
+        <div class="hero-card">
+            Healthy Habits
+        </div>
+
+    </div>
+
+    <div class="week-line">
+
+        MON → TUE → WED → THU → FRI → SAT → SUN
+
+    </div>
+
+    <button onclick="startSimulation()">
+        Start Simulation
+    </button>
+
+</div>
+
+<div class="container" id="game-container" style="display:none;">
+
+    <h1> SchoolLife Simulator </h1>
+
+    <p class="subtitle">
+        Explore how daily choices related to sleep, stress,
+        friendships, school life and digital habits influence wellbeing.
+    </p>
+
+    <div class="hbsc-topics">
+
+        <span>😴 Sleep</span>
+
+        <span>😌 Mental Health</span>
+
+        <span>📱 Digital Wellbeing</span>
+
+        <span>👥 Friendships</span>
+
+        <span>💬 Cyberbullying</span>
+
+        <span>🏃 Physical Activity</span>
+
+    </div>
+
+    <div class="stats">
+
+        <div class="stat">
+            🏫 School Experience:
+            <span id="academic">50</span>
+        </div>
+
+        <div class="stat">
+            😌 Mental Wellbeing:
+            <span id="mental">50</span>
+        </div>
+
+        <div class="stat">
+            💪 Physical Health:
+            <span id="physical">50</span>
+        </div>
+
+        <div class="stat">
+            👥 Social Support:
+            <span id="social">50</span>
+        </div>
+
+    </div>
+
+    <p id="day-counter" class="day-counter">
+        Day 1 of 7
+    </p>
+
+
+    <div class="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <div class="card">
+
+        <h2 id="day">Monday</h2>
+
+        <p id="question">
+            Tomorrow you have an important exam. What do you do?
+        </p>
+
+        <div id="options">
+
+            <button onclick="chooseOption(0)">
+                Study until 2 AM
+            </button>
+
+            <button onclick="chooseOption(1)">
+                Study until 10 PM and sleep well
+            </button>
+
+            <button onclick="chooseOption(2)">
+                Don't study
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
